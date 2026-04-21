@@ -5,12 +5,18 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import HSPAEmulator from "./pages/HSPAEmulator";
+import SupremeCourtPetition from "./pages/SupremeCourtPetition";
+import JobPostings from "./pages/JobPostings";
 
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/hspa"} component={HSPAEmulator} />
+      <Route path={"/petition"} component={SupremeCourtPetition} />
+      <Route path={"/jobs"} component={JobPostings} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
