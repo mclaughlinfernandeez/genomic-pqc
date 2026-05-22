@@ -24,6 +24,9 @@ export default function Home() {
             <Link href="/jobs">
               <a className="text-slate-700 hover:text-slate-900 font-medium">Careers</a>
             </Link>
+            <Link href="/demo">
+              <a className="text-slate-700 hover:text-slate-900 font-medium">Demo</a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -288,18 +291,18 @@ export default function Home() {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
+              <Link href="/demo">
+                <a>Try Pipeline Demo</a>
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
               <Link href="/hspa">
                 <a>HSPA Processor</a>
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
               <Link href="/petition">
-                <a>Supreme Court Petition</a>
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
-              <Link href="/jobs">
-                <a>Join Our Team</a>
+                <a>Petition</a>
               </Link>
             </Button>
           </div>

@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import HSPAEmulator from "./pages/HSPAEmulator";
 import SupremeCourtPetition from "./pages/SupremeCourtPetition";
 import JobPostings from "./pages/JobPostings";
+import PipelineDemo from "./pages/PipelineDemo";
 
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
       <Route path={"/hspa"} component={HSPAEmulator} />
       <Route path={"/petition"} component={SupremeCourtPetition} />
       <Route path={"/jobs"} component={JobPostings} />
+      <Route path={"/demo"} component={PipelineDemo} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
