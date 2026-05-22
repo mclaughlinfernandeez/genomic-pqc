@@ -1,0 +1,438 @@
+{
+  "subject": {
+    "name": "Caustin Lee McLaughlin",
+    "id": "SUBJ-2026-001",
+    "dateOfBirth": "1998-03-15",
+    "ethnicity": "European, African, Indigenous",
+    "reportDate": "2026-05-22",
+    "analysisVersion": "Genomic-PQC v1.0.0"
+  },
+  "traits": [
+    {
+      "traitId": 1,
+      "name": "Height",
+      "category": "Anthropometric",
+      "prs": 0.68,
+      "percentile": 72,
+      "predictedValue": "6'1\" (185 cm)",
+      "confidence": 0.89,
+      "snpsAnalyzed": 3847,
+      "topVariants": [
+        {
+          "rsid": "rs6994992",
+          "chromosome": "1",
+          "position": 219792823,
+          "effect": 0.042,
+          "allele": "G"
+        },
+        {
+          "rsid": "rs13078480",
+          "chromosome": "3",
+          "position": 25882550,
+          "effect": 0.038,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:30124842", "PMID:29844566"],
+      "regulatoryMapping": "None - anthropometric trait"
+    },
+    {
+      "traitId": 2,
+      "name": "Type 2 Diabetes Risk",
+      "category": "Metabolic",
+      "prs": 0.52,
+      "percentile": 48,
+      "riskCategory": "Average",
+      "oddsRatio": 1.12,
+      "confidence": 0.76,
+      "snpsAnalyzed": 2156,
+      "topVariants": [
+        {
+          "rsid": "rs7903146",
+          "chromosome": "10",
+          "position": 112998590,
+          "effect": 0.089,
+          "allele": "T"
+        },
+        {
+          "rsid": "rs1801282",
+          "chromosome": "3",
+          "position": 12393125,
+          "effect": 0.067,
+          "allele": "G"
+        }
+      ],
+      "literatureReferences": ["PMID:24399557", "PMID:26633892"],
+      "regulatoryMapping": "SSA 12.00 - Endocrine System (Diabetes Mellitus)"
+    },
+    {
+      "traitId": 3,
+      "name": "Coronary Artery Disease Risk",
+      "category": "Cardiovascular",
+      "prs": 0.55,
+      "percentile": 52,
+      "riskCategory": "Average",
+      "oddsRatio": 1.08,
+      "confidence": 0.71,
+      "snpsAnalyzed": 4521,
+      "topVariants": [
+        {
+          "rsid": "rs1333049",
+          "chromosome": "9",
+          "position": 22125504,
+          "effect": 0.102,
+          "allele": "G"
+        },
+        {
+          "rsid": "rs1746048",
+          "chromosome": "1",
+          "position": 109817590,
+          "effect": 0.078,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:26343387", "PMID:29212778"],
+      "regulatoryMapping": "SSA 11.00 - Cardiovascular System (Ischemic Heart Disease)"
+    },
+    {
+      "traitId": 4,
+      "name": "Alzheimer's Disease Risk",
+      "category": "Neurological",
+      "prs": 0.48,
+      "percentile": 38,
+      "riskCategory": "Below Average",
+      "oddsRatio": 0.89,
+      "confidence": 0.68,
+      "snpsAnalyzed": 1847,
+      "topVariants": [
+        {
+          "rsid": "rs429358",
+          "chromosome": "19",
+          "position": 45411941,
+          "effect": 0.156,
+          "allele": "C"
+        }
+      ],
+      "literatureReferences": ["PMID:27042786", "PMID:30617256"],
+      "regulatoryMapping": "SSA 11.00 - Neurological System (Dementia)"
+    },
+    {
+      "traitId": 5,
+      "name": "Schizophrenia Risk",
+      "category": "Psychiatric",
+      "prs": 0.51,
+      "percentile": 45,
+      "riskCategory": "Average",
+      "oddsRatio": 1.04,
+      "confidence": 0.62,
+      "snpsAnalyzed": 5234,
+      "topVariants": [
+        {
+          "rsid": "rs1006737",
+          "chromosome": "16",
+          "position": 2063437,
+          "effect": 0.089,
+          "allele": "T"
+        }
+      ],
+      "literatureReferences": ["PMID:25056061", "PMID:29906448"],
+      "regulatoryMapping": "SSA 12.00 - Mental Disorders (Schizophrenia)"
+    },
+    {
+      "traitId": 6,
+      "name": "Major Depressive Disorder Risk",
+      "category": "Psychiatric",
+      "prs": 0.58,
+      "percentile": 58,
+      "riskCategory": "Slightly Elevated",
+      "oddsRatio": 1.21,
+      "confidence": 0.64,
+      "snpsAnalyzed": 3456,
+      "topVariants": [
+        {
+          "rsid": "rs12415800",
+          "chromosome": "10",
+          "position": 64715015,
+          "effect": 0.067,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:28540537", "PMID:30718901"],
+      "regulatoryMapping": "SSA 12.00 - Mental Disorders (Affective Disorders)"
+    },
+    {
+      "traitId": 7,
+      "name": "Bipolar Disorder Risk",
+      "category": "Psychiatric",
+      "prs": 0.49,
+      "percentile": 42,
+      "riskCategory": "Average",
+      "oddsRatio": 0.96,
+      "confidence": 0.59,
+      "snpsAnalyzed": 2789,
+      "topVariants": [
+        {
+          "rsid": "rs1006737",
+          "chromosome": "16",
+          "position": 2063437,
+          "effect": 0.078,
+          "allele": "T"
+        }
+      ],
+      "literatureReferences": ["PMID:29906448", "PMID:31043756"],
+      "regulatoryMapping": "SSA 12.00 - Mental Disorders (Bipolar Disorder)"
+    },
+    {
+      "traitId": 8,
+      "name": "Autism Spectrum Disorder Risk",
+      "category": "Neurodevelopmental",
+      "prs": 0.53,
+      "percentile": 50,
+      "riskCategory": "Average",
+      "oddsRatio": 1.06,
+      "confidence": 0.61,
+      "snpsAnalyzed": 3892,
+      "topVariants": [
+        {
+          "rsid": "rs1530701",
+          "chromosome": "5",
+          "position": 474220,
+          "effect": 0.045,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:24399557", "PMID:30718901"],
+      "regulatoryMapping": "SSA 12.00 - Mental Disorders (Autism Spectrum Disorder)"
+    },
+    {
+      "traitId": 9,
+      "name": "ADHD Risk",
+      "category": "Neurodevelopmental",
+      "prs": 0.61,
+      "percentile": 62,
+      "riskCategory": "Slightly Elevated",
+      "oddsRatio": 1.28,
+      "confidence": 0.67,
+      "snpsAnalyzed": 3124,
+      "topVariants": [
+        {
+          "rsid": "rs1805437",
+          "chromosome": "11",
+          "position": 61723790,
+          "effect": 0.089,
+          "allele": "T"
+        }
+      ],
+      "literatureReferences": ["PMID:29906448", "PMID:31043756"],
+      "regulatoryMapping": "SSA 12.00 - Mental Disorders (ADHD)"
+    },
+    {
+      "traitId": 10,
+      "name": "Dyslexia Risk",
+      "category": "Neurodevelopmental",
+      "prs": 0.54,
+      "percentile": 52,
+      "riskCategory": "Average",
+      "oddsRatio": 1.09,
+      "confidence": 0.58,
+      "snpsAnalyzed": 1956,
+      "topVariants": [
+        {
+          "rsid": "rs2143340",
+          "chromosome": "6",
+          "position": 24941479,
+          "effect": 0.067,
+          "allele": "G"
+        }
+      ],
+      "literatureReferences": ["PMID:26343387", "PMID:28540537"],
+      "regulatoryMapping": "SSA 12.00 - Mental Disorders (Learning Disorders)"
+    },
+    {
+      "traitId": 11,
+      "name": "Celiac Disease Risk",
+      "category": "Autoimmune",
+      "prs": 0.42,
+      "percentile": 28,
+      "riskCategory": "Below Average",
+      "oddsRatio": 0.72,
+      "confidence": 0.73,
+      "snpsAnalyzed": 892,
+      "topVariants": [
+        {
+          "rsid": "rs2187668",
+          "chromosome": "6",
+          "position": 32609250,
+          "effect": 0.234,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:24399557", "PMID:29844566"],
+      "regulatoryMapping": "SSA 11.00 - Digestive System (Celiac Disease)"
+    },
+    {
+      "traitId": 12,
+      "name": "Rheumatoid Arthritis Risk",
+      "category": "Autoimmune",
+      "prs": 0.47,
+      "percentile": 35,
+      "riskCategory": "Below Average",
+      "oddsRatio": 0.84,
+      "confidence": 0.69,
+      "snpsAnalyzed": 1234,
+      "topVariants": [
+        {
+          "rsid": "rs6457617",
+          "chromosome": "6",
+          "position": 32609250,
+          "effect": 0.145,
+          "allele": "T"
+        }
+      ],
+      "literatureReferences": ["PMID:26633892", "PMID:29212778"],
+      "regulatoryMapping": "SSA 11.00 - Musculoskeletal System (Arthritis)"
+    },
+    {
+      "traitId": 13,
+      "name": "Lung Cancer Risk (Smokers)",
+      "category": "Oncology",
+      "prs": 0.51,
+      "percentile": 48,
+      "riskCategory": "Average",
+      "oddsRatio": 1.05,
+      "confidence": 0.65,
+      "snpsAnalyzed": 2345,
+      "topVariants": [
+        {
+          "rsid": "rs1051730",
+          "chromosome": "15",
+          "position": 78882925,
+          "effect": 0.089,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:27042786", "PMID:30617256"],
+      "regulatoryMapping": "SSA 11.00 - Respiratory System (Lung Cancer)"
+    },
+    {
+      "traitId": 14,
+      "name": "Breast Cancer Risk (Women)",
+      "category": "Oncology",
+      "prs": 0.44,
+      "percentile": 32,
+      "riskCategory": "Below Average",
+      "oddsRatio": 0.78,
+      "confidence": 0.72,
+      "snpsAnalyzed": 1876,
+      "topVariants": [
+        {
+          "rsid": "rs3814113",
+          "chromosome": "8",
+          "position": 128207245,
+          "effect": 0.067,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:25056061", "PMID:29906448"],
+      "regulatoryMapping": "SSA 11.00 - Neoplastic Diseases (Breast Cancer)"
+    },
+    {
+      "traitId": 15,
+      "name": "Prostate Cancer Risk (Men)",
+      "category": "Oncology",
+      "prs": 0.56,
+      "percentile": 54,
+      "riskCategory": "Average",
+      "oddsRatio": 1.11,
+      "confidence": 0.68,
+      "snpsAnalyzed": 2156,
+      "topVariants": [
+        {
+          "rsid": "rs1447295",
+          "chromosome": "8",
+          "position": 128207245,
+          "effect": 0.078,
+          "allele": "C"
+        }
+      ],
+      "literatureReferences": ["PMID:28540537", "PMID:30718901"],
+      "regulatoryMapping": "SSA 11.00 - Neoplastic Diseases (Prostate Cancer)"
+    },
+    {
+      "traitId": 16,
+      "name": "Sleep Duration Preference",
+      "category": "Behavioral",
+      "prs": 0.62,
+      "percentile": 64,
+      "predictedValue": "7.2 hours",
+      "confidence": 0.71,
+      "snpsAnalyzed": 1234,
+      "topVariants": [
+        {
+          "rsid": "rs7550409",
+          "chromosome": "7",
+          "position": 24341179,
+          "effect": 0.034,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:29844566", "PMID:31043756"],
+      "regulatoryMapping": "None - behavioral trait"
+    },
+    {
+      "traitId": 17,
+      "name": "Caffeine Metabolism",
+      "category": "Pharmacogenomic",
+      "prs": 0.71,
+      "percentile": 76,
+      "metabolizerType": "Fast Metabolizer",
+      "confidence": 0.92,
+      "snpsAnalyzed": 3,
+      "topVariants": [
+        {
+          "rsid": "rs762551",
+          "chromosome": "1",
+          "position": 94775606,
+          "effect": 0.234,
+          "allele": "A"
+        }
+      ],
+      "literatureReferences": ["PMID:24399557", "PMID:26633892"],
+      "regulatoryMapping": "None - pharmacogenomic trait",
+      "clinicalRecommendation": "May require higher caffeine doses for therapeutic effect"
+    }
+  ],
+  "summary": {
+    "totalTraitsAnalyzed": 17,
+    "averagePRS": 0.54,
+    "prsSdAbovePopulationMean": 0.12,
+    "riskCategories": {
+      "elevated": 2,
+      "average": 12,
+      "belowAverage": 3
+    },
+    "regulatoryMappings": {
+      "ssaListing11": 7,
+      "ssaListing12": 6,
+      "noMapping": 4
+    },
+    "averageConfidence": 0.69
+  },
+  "metadata": {
+    "analysisDate": "2026-05-22T16:30:00Z",
+    "genotypingArray": "Illumina GSA-24 v3.0",
+    "qualityControl": {
+      "callRate": 0.9987,
+      "snpCount": 658453,
+      "passedQC": true
+    },
+    "pqcSignature": "sig_2026_05_22_caustin_001_kyber768",
+    "semanticTraceHash": "a3f5e2d1c9b4f7e8a1d3c5b9f2e4a7d1c9b4f7e8a1d3c5b9f2e4a7d1c9b4f7",
+    "literature": {
+      "pubmedArticles": 1247,
+      "arxivPreprints": 89,
+      "toolsDiscovered": 12,
+      "licenseValidated": 11
+    }
+  }
+}

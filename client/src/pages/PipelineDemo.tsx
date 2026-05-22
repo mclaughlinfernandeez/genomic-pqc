@@ -35,6 +35,7 @@ export default function PipelineDemo() {
   ]);
   const [results, setResults] = useState<PipelineResult[]>([]);
   const [importedData, setImportedData] = useState<Record<string, unknown> | null>(null);
+  const [selectedExample, setSelectedExample] = useState<string | null>(null);
 
   const runPipeline = async () => {
     setIsRunning(true);
@@ -142,11 +143,23 @@ export default function PipelineDemo() {
         const content = e.target?.result as string;
         const data = JSON.parse(content);
         setImportedData(data);
+        setSelectedExample(null);
       } catch (error) {
         alert("Error parsing JSON file");
       }
     };
     reader.readAsText(file);
+  };
+
+  const loadExample = async (exampleName: string) => {
+    try {
+      const response = await fetch("/caustin-17-traits.json");
+      const data = await response.json();
+      setImportedData(data);
+      setSelectedExample(exampleName);
+    } catch (error) {
+      alert("Error loading example data");
+    }
   };
 
   const exportResults = (format: "json" | "csv") => {
@@ -338,11 +351,19 @@ export default function PipelineDemo() {
                         Select File
                       </label>
                     </Button>
+                    <p className="text-sm text-slate-500 mt-2">or</p>
+                    <Button
+                      onClick={() => loadExample("Caustin's 17-Trait Report")}
+                      variant="secondary"
+                      className="mt-2"
+                    >
+                      Load Example: Caustin's Report
+                    </Button>
                     {importedData && (
                       <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                        <p className="text-green-700 font-semibold">✓ File imported successfully</p>
+                        <p className="text-green-700 font-semibold">✓ Data loaded successfully</p>
                         <p className="text-sm text-green-600 mt-1">
-                          {Object.keys(importedData).length} fields loaded
+                          {selectedExample ? selectedExample : "Custom file"} - {Object.keys(importedData).length} fields
                         </p>
                       </div>
                     )}
@@ -389,7 +410,57 @@ export default function PipelineDemo() {
 
             {/* Results Tab */}
             <TabsContent value="results" className="mt-6 space-y-6">
-              {results.length === 0 ? (
+              {importedData && (importedData as Record<string, unknown>).traits && Array.isArray((importedData as Record<string, unknown>).traits) && (
+                <Card className="border-blue-300 bg-blue-50">
+                  <CardHeader>
+                    <CardTitle className="text-blue-900">Caustin's 17-Trait Genomic Report</CardTitle>
+                    <CardDescription className="text-blue-700">
+                      Subject: {((importedData as Record<string, unknown>).subject as Record<string, unknown>)?.name || "Unknown"} | Analysis Date: {((importedData as Record<string, unknown>).subject as Record<string, unknown>)?.reportDate}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {((importedData as Record<string, unknown>).traits as Record<string, unknown>[]).map((trait: Record<string, unknown>, idx: number) => (
+                        <div key={idx} className="p-4 bg-white rounded-lg border border-slate-200 hover:border-blue-400 transition">
+                          <div className="flex items-start justify-between mb-2">
+                            <div>
+                              <p className="font-semibold text-slate-900">{trait.name}</p>
+                              <p className="text-xs text-slate-500">{trait.category}</p>
+                            </div>
+                            <Badge variant={(trait.percentile as number) > 60 ? "default" : (trait.percentile as number) < 40 ? "secondary" : "outline"}>
+                              {trait.percentile}th
+                            </Badge>
+                          </div>
+                          <div className="space-y-1 text-sm">
+                            <p className="text-slate-700">
+                              <span className="font-medium">PRS:</span> {Number(trait.prs).toFixed(2)}
+                            </p>
+                            {trait.riskCategory && (
+                              <p className="text-slate-700">
+                                <span className="font-medium">Risk:</span> {String(trait.riskCategory)}
+                              </p>
+                            )}
+                            {trait.predictedValue && (
+                              <p className="text-slate-700">
+                                <span className="font-medium">Value:</span> {String(trait.predictedValue)}
+                              </p>
+                            )}
+                            {trait.metabolizerType && (
+                              <p className="text-slate-700">
+                                <span className="font-medium">Type:</span> {String(trait.metabolizerType)}
+                              </p>
+                            )}
+                            <p className="text-slate-600 mt-2">
+                              <span className="font-medium">Confidence:</span> {Number(trait.confidence).toFixed(0)}%
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+              {results.length === 0 && !importedData ? (
                 <Card className="border-slate-200 bg-slate-50">
                   <CardContent className="pt-12 pb-12 text-center">
                     <AlertCircle className="w-12 h-12 text-slate-400 mx-auto mb-4" />
