@@ -21,8 +21,8 @@ export default function Home() {
             <Link href="/petition">
               <a className="text-slate-700 hover:text-slate-900 font-medium">Petition</a>
             </Link>
-            <Link href="/jobs">
-              <a className="text-slate-700 hover:text-slate-900 font-medium">Careers</a>
+            <Link href="/profile">
+              <a className="text-slate-700 hover:text-slate-900 font-medium">Profile</a>
             </Link>
             <Link href="/demo">
               <a className="text-slate-700 hover:text-slate-900 font-medium">Demo</a>

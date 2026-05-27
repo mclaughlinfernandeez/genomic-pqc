@@ -7,7 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import HSPAEmulator from "./pages/HSPAEmulator";
 import SupremeCourtPetition from "./pages/SupremeCourtPetition";
-import JobPostings from "./pages/JobPostings";
+import CaustinProfile from "./pages/CaustinProfile";
 import PipelineDemo from "./pages/PipelineDemo";
 
 
@@ -17,7 +17,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/hspa"} component={HSPAEmulator} />
       <Route path={"/petition"} component={SupremeCourtPetition} />
-      <Route path={"/jobs"} component={JobPostings} />
+      <Route path={"/profile"} component={CaustinProfile} />
       <Route path={"/demo"} component={PipelineDemo} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
