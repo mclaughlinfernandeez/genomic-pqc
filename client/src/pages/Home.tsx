@@ -43,18 +43,18 @@ export default function Home() {
               Advancing precision medicine. Modernizing disability adjudication.
             </p>
             <div className="flex gap-4">
-              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
-                <Link href="/hspa">
-                  <a className="flex items-center gap-2">
+              <Link href="/hspa">
+                <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
+                  <span className="flex items-center gap-2">
                     Explore HSPA Processor <ArrowRight className="w-4 h-4" />
-                  </a>
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
-                <Link href="/petition">
-                  <a>Read the Petition</a>
-                </Link>
-              </Button>
+                  </span>
+                </Button>
+              </Link>
+              <Link href="/petition">
+                <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
+                  <span>Read the Petition</span>
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
