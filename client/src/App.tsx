@@ -9,6 +9,7 @@ import HSPAEmulator from "./pages/HSPAEmulator";
 import SupremeCourtPetition from "./pages/SupremeCourtPetition";
 import CaustinProfile from "./pages/CaustinProfile";
 import PipelineDemo from "./pages/PipelineDemo";
+import GSEFPathways from "./pages/GSEFPathways";
 
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
       <Route path={"/petition"} component={SupremeCourtPetition} />
       <Route path={"/profile"} component={CaustinProfile} />
       <Route path={"/demo"} component={PipelineDemo} />
+      <Route path={"/gsef"} component={GSEFPathways} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

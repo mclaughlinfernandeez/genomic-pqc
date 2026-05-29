@@ -27,6 +27,9 @@ export default function Home() {
             <Link href="/demo">
               <a className="text-slate-700 hover:text-slate-900 font-medium">Demo</a>
             </Link>
+            <Link href="/gsef">
+              <a className="text-slate-700 hover:text-slate-900 font-medium">GSEF</a>
+            </Link>
           </div>
         </div>
       </nav>
